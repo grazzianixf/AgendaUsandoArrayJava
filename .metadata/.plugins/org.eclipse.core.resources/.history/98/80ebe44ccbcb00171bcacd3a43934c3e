@@ -1,0 +1,33 @@
+package br.ifce.java.agenda;
+
+import java.io.IOException;
+import java.util.Scanner;
+
+import br.ifce.java.agenda.controles.Agenda;
+
+public class Principal {
+
+	public static void main(String[] args) throws IOException {
+		Agenda agenda = new Agenda();
+		
+        Scanner sc = new Scanner(System.in);
+        
+        while(obterOpcao(sc) != 0) {
+        	System.out.println("operando a agenda");
+        }
+	}
+	
+	private static void limparConsole() {
+		System.out.print("\033[H\033[2J");
+		System.out.flush();		
+	}
+
+	private static int obterOpcao(Scanner sc) {
+		limparConsole();
+		System.out.println("--- Aplicação Agenda ---");
+		System.out.println("(0) SAIR ");
+        System.out.print("Digite uma opção: ");
+        
+        return sc.nextInt();		
+	}
+}

@@ -1,0 +1,5 @@
+package br.ifce.java.agenda.entidades.controles;
+
+public class Agenda {
+	private Contato[] contatos;
+}
