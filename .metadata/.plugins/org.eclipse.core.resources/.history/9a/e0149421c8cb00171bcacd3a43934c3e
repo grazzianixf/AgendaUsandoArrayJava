@@ -1,7 +1,0 @@
-package br.ifce.java.agenda.entidades;
-
-import br.ifce.java.agenda.entidades.Contato;
-
-public class Agenda {
-	private Contato[] contatos;
-}
